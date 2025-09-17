@@ -1,5 +1,5 @@
 
-import { Route,BrowserRouter as Router, Routes,useLocation } from 'react-router-dom'
+import { HashRouter, Route,BrowserRouter as Router, Routes,useLocation } from 'react-router-dom'
 import Home from './Pages/Home'
 import ESGCommandCenter from './Components/Services'
 import Header from './Components/Header'
@@ -18,6 +18,8 @@ import ForgetPass from './Forms/ForgetPass'
 import Verify from './Forms/Verify'
 import { AuthProvider } from './Context/AuthContext'
 import Jayris from './Components/Jayris'
+import Contact from './Forms/Contact'
+import Testinomial from './Components/Testinomial'
 
 
 
@@ -50,6 +52,10 @@ function AppLayout() {
       <Route path='/blog' element={<Blog/>}/>
       <Route path='/services' element={<SliderAbout/>}/>
       <Route path='/jayris' element={<Jayris/>}/>
+      <Route path='/contact' element={<Contact/>}/>
+      <Route path='/testi' element={<Testinomial/>}/>
+
+      
 
 
       {/* <Route path='/drop' element={<DropdownMenu/>} /> */}
@@ -64,9 +70,9 @@ function AppLayout() {
 
 export default function App() {
   return (
-    <Router>
+    <HashRouter>
       <AppLayout />
-    </Router>
+    </HashRouter>
   );
 }
 

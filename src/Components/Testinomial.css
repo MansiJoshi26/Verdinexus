@@ -1,0 +1,22 @@
+
+.wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.divbox1{
+    transition: all .5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    height: 65vh;
+}
+.divbox1 img{
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+.divbox1:hover{
+    transform: translateY(-50px);
+    /* top: -10%; */
+    
+}

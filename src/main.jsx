@@ -6,6 +6,7 @@ import { ContextProvider } from './Context/Context.jsx'
 import './i18n.js'
 import './Fonts/Fonts.css'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ContextProvider>

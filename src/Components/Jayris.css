@@ -17,15 +17,20 @@
     position: sticky;
     top: 0%;
     background-color: #0A0125;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.524),rgba(0, 0, 0, 0.497)),url('https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?_gl=1*1k1cw2z*_ga*OTI0OTM0NzcxLjE3NTIwNDY2NTk.*_ga_8JE65Q40S6*czE3NTIwNzg0MjgkbzUkZzEkdDE3NTIwNzg0NTIkajM2JGwwJGgw'); */
 
 }
 .section_1::before{
     content: "";
-    height: 50px;
+    height: 100px;
     top: -1%;
-    left: 0%;
+    left: -1%;
     width: 100%;
     position: absolute;
     filter: blur(10px);
-    background-color: #0A0125;
+    background-color: #010206;
+}
+
+@media (max-width:768px) {
+  
 }

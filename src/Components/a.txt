@@ -1,6 +1,9 @@
 import React from 'react'
 import { motion, useScroll, useTransform } from "framer-motion";
 import Earthvideo from '/Earthvideo.mp4'
+import bg2 from '/bg2.mp4'
+import imagebg from '/bg2.jpeg'
+import image from '/image.jpg'
 import star from '/star.png'
 import './Jayris.css'
 const Jayris = () => {
@@ -23,13 +26,13 @@ const Jayris = () => {
                     y: backgroundY,
                 }}
                 className='section relative overflow-hidden h-screen '>
-                <video className='h-[100%] w-[100%] object-cover' autoPlay muted loop><source src={Earthvideo} /></video>
+                <video className='h-[100%] w-[100%] object-cover' autoPlay muted loop><source src='https://verdinexus.vercel.app/Earthvideo.mp4' /></video>
                 <img src={star} alt="" />
-                 {/* <div className="absolute inset-0 bg-black/0 backdrop-blur-sm"></div> */}
+                 <div className="absolute inset-0 bg-black/10 backdrop-blur-sm"></div>
                 <div className='absolute z-20 top-[90%] w-[100%] md:w-[55%] left-1/2 h-[100%] transfrom -translate-x-[50%] -translate-y-[50%] text-center text-white '>
                     <motion.h1
                         style={{ y: textY }}
-                        className='text-xl md:text-6xl font-bold'><span className='text-orange-500'>Shape </span>the Future. Build Your Career <span className='text-orange-500'>With </span> Jayaris</motion.h1>
+                        className='text-xl md:text-5xl'><span className='text-orange-400'>Shape </span>the Future. Build Your Career <span className='text-orange-400'>With </span> Jayaris</motion.h1>
                         <br />
 
                     <motion.p style={{ y: textY }} className='md:text-sm text-[10px] w-[80%] mx-auto' >At Jayaris, careers are more than just roles. We empower talent with purpose, ownership, and growth opportunities that create lasting impact.
@@ -42,18 +45,18 @@ const Jayris = () => {
                     </div>
                 </div>
             </motion.div>
-            <div style={{backgroundImage:'url("/Testibg.jpeg")', backgroundPosition:'center',backgroundSize:'cover'}} className='section_1 relative '>
+            <div className='section_1 '>
                 {/* <video className='h-[100%] w-[100%] object-cover' autoPlay muted loop><source src={Earthvideo} /></video> */}
                 {/* <video className='w-[100%] h-[100%] object-cover' autoPlay muted loop><source src={bg2} /></video> */}
-                <img src='/Testibg2.jpeg' className='w-[100%] object-fit-contain absolute' alt="" />
+                {/* <img src={imagebg} alt="" /> */}
                 <motion.div
                     initial={{ opacity: 0, y: 100, }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ delay: .1, duration: .5 }}
+                    transition={{ delay: .5, duration: .5 }}
                     className='h-[20vh] my-[10%] md:my-[5%] flex justify-center items-end'>
                     <motion.h1
 
-                        className='md:text-4xl z-50 text-xl text-white text-center' >Overview of <span className='text-orange-300'>Opportunities</span>
+                        className='md:text-4xl text-xl text-white text-center' >Overview of <span className='text-orange-300'>Opportunities</span>
                     </motion.h1>
                 </motion.div>
 
@@ -61,9 +64,9 @@ const Jayris = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 100, }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: .1, duration: .5 }}
-                        className='md:flex justify-between h-[100%] bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg items-center mx-auto md:w-[80%] md:h-[60vh] py-4 px-3 text-white md:pt-2 md:px-10' >
-                        <div className="box1 md:w-1/2  md:px-8">
+                        transition={{ delay: .5, duration: .5 }}
+                        className='md:flex justify-between items-center mx-auto w-[90%] h-[60vh] text-white md:pt-2 md:px-10' >
+                        <div className="box1 md:w-1/2 md:px-8">
                             <ul className='space-y-4 text-xs md:text-lg items-start '>
                                 <p className='text-orange-300'>Open for Freshers (Internships)</p>
                                 <li>Start strong with immersive internships that let you work on live projects, collaborate with real teams, and develop skills that matter in the real world</li>
@@ -94,11 +97,11 @@ const Jayris = () => {
                     </motion.div> */}
                 </div>
 
-                <div className='boxesss md:py-[3%]  bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg  mt-10 text-white overflow-hidden w-[90%] mx-auto'>
+                <div className='boxesss mt-10 text-white overflow-hidden w-[90%] mx-auto'>
                     <motion.div
                         initial={{ opacity: 0, x: -50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="right md:px-24 w-[80%] ">
                         <h1 className='md:mb-12 font-semibold md:text-6xl text-orange-500'>Web Development</h1>
                         <div>
@@ -112,23 +115,23 @@ const Jayris = () => {
                     <motion.div
                         initial={{ opacity: 0, x: 50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="left md:px-10 md:mt-20 md:w-[80%] rounded-xl "><img className=' rounded-xl' src={'/img1.jpg'} alt="" /></motion.div>
                 </div>
 
                 <br />
                 <br />
 
-                <div className='boxesss md:py-[3%]  bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg  mt-10 text-white overflow-hidden w-[90%] mx-auto'>
+                <div className='boxesss mt-10 text-white overflow-hidden w-[90%] mx-auto'>
                     <motion.div
                         initial={{ opacity: 0, x: -50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="left md:px-10 md:mt-20 md:w-[80%] rounded-xl "><img className=' rounded-xl' src={'/img2.webp'} alt="" /></motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="right md:px-24 w-[80%] ">
                         <h1 className='md:mb-12 font-semibold md:text-6xl text-orange-500'>App Development</h1>
                         <div>
@@ -144,11 +147,11 @@ const Jayris = () => {
 
                 <br />
                 <br />
-                <div className='boxesss md:py-[3%]  bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg  mt-10 text-white overflow-hidden w-[90%] mx-auto'>
+                <div className='boxesss mt-10 text-white overflow-hidden w-[90%] mx-auto'>
                     <motion.div
                         initial={{ opacity: 0, x: -50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="right md:px-24 w-[80%] ">
                         <h1 className='md:mb-12 font-semibold md:text-6xl text-orange-500'>UI/UX Design</h1>
                         <div>
@@ -162,22 +165,22 @@ const Jayris = () => {
                     <motion.div
                         initial={{ opacity: 0, x: 50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="left md:px-10 md:mt-20 md:w-[80%] rounded-xl "><img className=' rounded-xl' src={'/graphic.jpg'} alt="" /></motion.div>
                 </div>
 
                 <br />
                 <br />
-                   <div className='boxesss md:py-[3%]  bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg  mt-10 text-white overflow-hidden w-[90%] mx-auto'>
+                   <div className='boxesss mt-10 text-white overflow-hidden w-[90%] mx-auto'>
                     <motion.div
                         initial={{ opacity: 0, x: -50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="left md:px-10 md:mt-20 md:w-[80%] rounded-xl "><img className=' rounded-xl' src="https://cdn.pixabay.com/photo/2020/05/18/16/17/social-media-5187243_1280.png" alt="" /></motion.div>
                     <motion.div
                         initial={{ opacity: 0, x: 50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="right md:px-24 w-[80%] ">
                         <h1 className='md:mb-12 font-semibold md:text-6xl text-orange-500'>SEO & Digital Marketing</h1>
                         <div>
@@ -190,11 +193,11 @@ const Jayris = () => {
                     </motion.div>
 
                 </div>
-                  <div className='boxesss md:py-[3%]  bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg  mt-10 text-white overflow-hidden w-[90%] mx-auto'>
+                  <div className='boxesss mt-10 text-white overflow-hidden w-[90%] mx-auto'>
                     <motion.div
                         initial={{ opacity: 0, x: -50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="right md:px-24 w-[80%] ">
                         <h1 className='md:mb-12 font-semibold md:text-6xl text-orange-500'>Content Creation</h1>
                         <div>
@@ -208,15 +211,15 @@ const Jayris = () => {
                     <motion.div
                         initial={{ opacity: 0, x: 50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="left md:px-10 md:mt-20 md:w-[80%] rounded-xl "><img className=' rounded-xl' src="https://cdn.pixabay.com/photo/2024/09/08/08/51/man-9031564_1280.jpg" alt="" /></motion.div>
                 </div>
 
-                    <div className='boxesss md:py-[3%] mt-10  bg-white/10 backdrop-blur-md border border-white/30 rounded-xl shadow-lg  text-white overflow-hidden w-[90%] mx-auto'>
+                    <div className='boxesss mt-10 text-white overflow-hidden w-[90%] mx-auto'>
                     <motion.div
                         initial={{ opacity: 0, x: -50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="right md:px-24 w-[80%] ">
                         <h1 className='md:mb-12 font-semibold md:text-6xl text-orange-500'>Team Culture & Perks</h1>
                         <div>
@@ -237,7 +240,7 @@ const Jayris = () => {
                     <motion.div
                         initial={{ opacity: 0, x: 50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        transition={{ delay: .1 }}
+                        transition={{ delay: .5 }}
                         className="left md:px-10 md:mt-20 md:w-[80%] rounded-xl "><img className=' rounded-xl' src={'/Team.jpg'}alt="" /></motion.div>
                 </div>
             </div>
@@ -245,4 +248,4 @@ const Jayris = () => {
     )
 }
 
-export default Jayris 
+export default Jayris in this code i want to convert its tailwind css into normal css or bootstrap so please convert this into in an accurate way without any break
